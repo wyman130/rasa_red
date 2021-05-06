@@ -1,0 +1,89 @@
+version: "2.0"
+
+nlu:
+- regex: greet
+  examples: |
+    - \b你好\b
+
+- regex: c1
+  examples: |
+    - \b什么地方\b
+- regex: c3
+  examples: |
+    - \b知青没来之前的\b
+
+- intent: greet
+  examples: |
+    - 你好
+    - 嗨
+    - 您好
+    - 好
+    - 早上好
+    - 中午好
+    - 下午好
+
+
+- intent: goodbye
+  examples: |
+    - 拜拜
+    - 88
+    - 8
+    - 再见
+    - 再会
+    - 拜
+    - bye
+
+- intent: bot_challenge
+  examples: |
+    - 你是机器人吗？
+    - 真人？
+    - 机器人？
+
+- intent: c1
+  examples: |
+    - 这是哪里
+    - 这是什么地方
+    - 这在哪
+
+- intent: c2
+  examples: |
+    - 有什么故事吗
+    - 谁来过这里
+    - 有什么经历吗
+    - 发生了什么
+
+- intent: c3
+  examples: |
+    - 知青没来之前的梁家河是什么样子
+    - 以前的梁家河
+
+- intent: c4
+  examples: |
+    - 习主席刚来梁家河的时候多大年纪啊？
+    - 习主席什么时候来的
+    - 当年多大
+    - 多少岁
+
+- intent: time
+  examples: |
+    - 几点了
+    - 现在几点了
+
+- intent: tell_name
+  examples: |
+    - 我要告诉你我的名字
+    - 准备记住我的名字
+    - 想知道我的名字吗
+
+- intent: give_name
+  examples: |
+    - wyman
+    - 伟明
+    - 黄伟明
+    - 小明
+- intent: repeat_name
+  examples: |
+    - 记得我的名字吗
+    - 我叫什么
+    - 我叫什么名字
+    - 我的名字是什么

@@ -1,0 +1,43 @@
+version: "2.0"
+
+stories:
+
+- story: consult_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: c1
+  - action: utter_c1
+  - intent: c4
+  - action: utter_c4
+  - action: utter_t
+
+
+
+- story: consult_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: c2
+  - action: utter_c2
+  - intent: c4
+  - action: utter_c4
+  - action: utter_t1
+
+- story: give_the_time
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: time
+    - action: action_show_time
+
+- story: name path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: tell_name
+    - action: utter_name
+    - intent: give_name
+    - action: action_receive_name
+    - intent: repeat_name
+    - action: action_say_name

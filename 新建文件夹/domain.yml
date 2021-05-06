@@ -1,0 +1,67 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - c1
+  - c2
+  - c3
+  - c4
+  - time
+  - tell_name
+  - give_name
+  - repeat_name
+
+
+slots:
+  name:
+    type: text
+actions:
+  - action_show_time
+  - action_receive_name
+  - action_say_name
+
+entities:
+  - DATE
+  - PERSON
+
+responses:
+  utter_greet:
+  - text: "您好，您可以询问我景点的相关信息。"
+
+  utter_c1:
+  - text: "这里是梁家河，习主席当年做知青时曾居住过的地方"
+
+  utter_c2:
+  - text: "1969年1月23日，北京1300多名知识青年来本县落户插队。知识青年们搭乘知青专列，从北京驶往陕北，一天一夜后，抵达陕西铜川站，然后换乘汽车，
+           穿越黄土高原上的千丘万壑，来到延安，继而被分配到各县、镇、村。这些知青其中一个就是习近平。北京知青到延安后，继而被分配到距离延安80公里左右的延川县，
+           最后，到了文安驿镇。公社已把名单提前分好，各大队支书根据单子招呼分到自己村的知青。梁家河大队一队队长带着15名知青回到梁家河村，其中就有习近平。从那一刻起，
+           16岁的习近平在那个叫梁家河村的地方开始了他的7年知青插队岁月。"
+
+  utter_c3:
+  - text: "多年以前，这本是一个籍籍无名的村落， “贫穷”与“落后”是它的代名词。虽说在公社的所在地，属于自然条件相对较好的那种村子，但当时一不通公路，二不通电，人们过着“日出而作，日落而息”的生活。"
+
+
+  utter_c4 :
+  - text: " 习总书记刚来梁家河的时候才16岁"
+
+  utter_t :
+  - text: " t"
+
+  utter_t1 :
+  - text: " t1"
+
+  utter_goodbye:
+  - text: "很高兴为您服务！"
+
+  utter_bot_challenge:
+  - text: "是的，我是一个聊天机器人！"
+
+  utter_default:
+    - text: "不好意思，你可以换一个说法吗？"
+#session_config:
+#  session_expiration_time: 60
+#  carry_over_slots_to_new_session: true
+  utter_name:
+    - text: "好的"
